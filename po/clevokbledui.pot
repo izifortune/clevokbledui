@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-05 16:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/ui/SelectcolorDialog.ui.h:1
+msgid "Pick a color"
+msgstr ""
+
+#: ../data/ui/SelectcolorDialog.ui.h:2
+msgid "White"
+msgstr ""
+
+#: ../data/ui/SelectcolorDialog.ui.h:3
+msgid "Yellow"
+msgstr ""
+
+#: ../data/ui/SelectcolorDialog.ui.h:4
+msgid "Light Blue"
+msgstr ""
+
+#: ../data/ui/SelectcolorDialog.ui.h:5
+msgid "Green"
+msgstr ""
+
+#: ../data/ui/SelectcolorDialog.ui.h:6
+msgid "Purple"
+msgstr ""
+
+#: ../data/ui/SelectcolorDialog.ui.h:7
+msgid "Red"
+msgstr ""
+
+#: ../data/ui/SelectcolorDialog.ui.h:8
+msgid "Blue"
+msgstr ""
+
+#: ../data/ui/SelectcolorDialog.ui.h:9
+msgid "None"
+msgstr ""
+
+#: ../clevokbledui.desktop.in.h:1 ../data/ui/ClevokbleduiWindow.ui.h:1
+msgid "Clevokbledui"
+msgstr ""
+
+#: ../clevokbledui.desktop.in.h:2
+msgid "Clevokbledui application"
+msgstr ""
+
+#: ../data/ui/ClevokbleduiWindow.ui.h:2
+msgid "_File"
+msgstr ""
+
+#: ../data/ui/ClevokbleduiWindow.ui.h:3
+msgid "_Edit"
+msgstr ""
+
+#: ../data/ui/ClevokbleduiWindow.ui.h:4
+msgid "_Help"
+msgstr ""
+
+#: ../data/ui/ClevokbleduiWindow.ui.h:5
+msgid "Color By Regions"
+msgstr ""
+
+#: ../data/ui/ClevokbleduiWindow.ui.h:6
+msgid "Left"
+msgstr ""
+
+#: ../data/ui/ClevokbleduiWindow.ui.h:7
+msgid "Middle"
+msgstr ""
+
+#: ../data/ui/ClevokbleduiWindow.ui.h:8
+msgid "Right"
+msgstr ""
+
+#: ../data/ui/ClevokbleduiWindow.ui.h:9
+msgid "Brightness"
+msgstr ""
+
+#: ../data/ui/ClevokbleduiWindow.ui.h:10
+msgid "Off"
+msgstr ""
+
+#: ../data/ui/ClevokbleduiWindow.ui.h:11
+msgid "Effects"
+msgstr ""
+
+#: ../data/ui/ClevokbleduiWindow.ui.h:12
+msgid "Random"
+msgstr ""
+
+#: ../data/ui/ClevokbleduiWindow.ui.h:13
+msgid "LeftRight"
+msgstr ""
+
+#: ../data/ui/ClevokbleduiWindow.ui.h:14
+msgid "RandomFlicker"
+msgstr ""
+
+#: ../data/ui/ClevokbleduiWindow.ui.h:15
+msgid "SingleFade"
+msgstr ""
+
+#: ../data/ui/ClevokbleduiWindow.ui.h:16
+msgid "OutMid"
+msgstr ""
+
+#: ../data/ui/ClevokbleduiWindow.ui.h:17
+msgid "PatternOff"
+msgstr ""
+
+#: ../data/ui/ClevokbleduiWindow.ui.h:18
+msgid "Status Area"
+msgstr ""
+
+#: ../data/ui/PreferencesClevokbleduiDialog.ui.h:1
+msgid "Clevokbledui Preferences"
+msgstr ""
+
+#: ../data/ui/PreferencesClevokbleduiDialog.ui.h:2
+msgid "Coming soon"
+msgstr ""
+
+#: ../data/ui/AboutClevokbleduiDialog.ui.h:1
+msgid "Copyright (C) 2013 Fabrizio Fortunato fortune@cortesconta.net"
+msgstr ""
+
+#: ../data/ui/AboutClevokbleduiDialog.ui.h:2
+msgid "Released in a hurry :D"
+msgstr ""
+
+#: ../data/ui/AboutClevokbleduiDialog.ui.h:3
+msgid "Author Blog"
+msgstr ""
+
+#: ../data/ui/AboutClevokbleduiDialog.ui.h:4
+msgid ""
+"# Copyright (C) 2013 Fabrizio Fortunato fortune@cortesconta.net\n"
+"# This program is free software: you can redistribute it and/or modify it \n"
+"# under the terms of the GNU General Public License version 3, as "
+"published \n"
+"# by the Free Software Foundation.\n"
+"# \n"
+"# This program is distributed in the hope that it will be useful, but \n"
+"# WITHOUT ANY WARRANTY; without even the implied warranties of \n"
+"# MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR \n"
+"# PURPOSE.  See the GNU General Public License for more details.\n"
+"# \n"
+"# You should have received a copy of the GNU General Public License along \n"
+"# with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+msgstr ""
+
+#: ../clevokbledui/__init__.py:32
+msgid "Show debug messages (-vv debugs clevokbledui_lib also)"
+msgstr ""

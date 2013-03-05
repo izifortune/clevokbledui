@@ -1,0 +1,4 @@
+project = clevokbledui
+version = 12.08.1
+template = ubuntu-application
+ppa = ppa-fortune

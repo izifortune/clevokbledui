@@ -1,0 +1,8 @@
+[Desktop Entry]
+_Name=Clevokbledui
+_Comment=Clevokbledui application
+Categories=GNOME;Utility;
+Exec=clevokbledui
+Icon=clevokbledui
+Terminal=false
+Type=Application
