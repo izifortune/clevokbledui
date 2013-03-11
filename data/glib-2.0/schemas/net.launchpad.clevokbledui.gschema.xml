@@ -6,5 +6,25 @@
       <summary>Sample setting</summary>
       <description>Longer description of this sample setting.  Talk about allowed values and what it does.</description>
     </key>
+    <key name="left" type="s">
+      <default>''</default>
+      <summary>Left Color</summary>
+      <description>Left Color</description>
+    </key>
+    <key name="right" type="s">
+      <default>''</default>
+      <summary>Right Color</summary>
+      <description>Right Color</description>
+    </key>
+    <key name="middle" type="s">
+      <default>''</default>
+      <summary>Middle Color</summary>
+      <description>Middle Color</description>
+    </key>
+    <key name="brightness" type="s">
+      <default>''</default>
+      <summary>Brightness Level</summary>
+      <description>Brightness Level</description>
+    </key>
   </schema>
 </schemalist>

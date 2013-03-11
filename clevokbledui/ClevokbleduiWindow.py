@@ -20,6 +20,7 @@ import os, sys
 import subprocess
 
 from gi.repository import Gtk # pylint: disable=E0611
+from gi.repository import Gio # pylint: disable=E0611
 import logging
 logger = logging.getLogger('clevokbledui')
 
@@ -41,6 +42,7 @@ class ClevokbleduiWindow(Window):
         self.PreferencesDialog = PreferencesClevokbleduiDialog
         self.SelectcolorDialog = SelectcolorDialog
         self.ErrorDialog = ErrorDialog
+        self.settings = Gio.Settings("net.launchpad.clevokbledui")
 
         
 
@@ -65,6 +67,21 @@ class ClevokbleduiWindow(Window):
             res = errorDialog.run()
             errorDialog.destroy()
             sys.exit("\nPath not exists\n")
+
+        #Code for resume previous state for now only for left - middle -right and brightness
+        if self.settings.get_string('left'):
+            print self.settings.get_string('left')
+            subprocess.call(self.cmd 
+                %(str(self.settings.get_string('left')).zfill(3),'left'),shell=True)
+        if self.settings.get_string('middle'):
+            subprocess.call(self.cmd 
+                %(str(self.settings.get_string('middle')).zfill(3),'middle'),shell=True)
+        if self.settings.get_string('right'):
+            subprocess.call(self.cmd 
+                %(str(self.settings.get_string('right')).zfill(3),'right'),shell=True)
+        if self.settings.get_string('brightness'):
+            subprocess.call(self.cmd 
+                %(str(self.settings.get_string('brightness')),'brightness'),shell=True)
         
 
     #For color regions
@@ -74,6 +91,7 @@ class ClevokbleduiWindow(Window):
             res = scd.run()
             if res != Gtk.ResponseType.CANCEL:
                 subprocess.call(self.cmd %(str(res).zfill(3),'left'),shell=True)
+                self.settings.set_string('left',str(res).zfill(3))
             scd.destroy()
             
     def on_middle_clicked(self, widget, data=None):
@@ -82,6 +100,7 @@ class ClevokbleduiWindow(Window):
             res = scd.run()
             if res != Gtk.ResponseType.CANCEL:
                 subprocess.call(self.cmd %(str(res).zfill(3),'middle'),shell=True)
+                self.settings.set_string('middle',str(res).zfill(3))
             scd.destroy()
             
     def on_right_clicked(self, widget, data=None):
@@ -90,6 +109,7 @@ class ClevokbleduiWindow(Window):
             res = scd.run()
             if res != Gtk.ResponseType.CANCEL:
                 subprocess.call(self.cmd %(str(res).zfill(3),'right'),shell=True)
+                self.settings.set_string('right',str(res).zfill(3))
             scd.destroy()
            
     #bightness
@@ -101,6 +121,7 @@ class ClevokbleduiWindow(Window):
         else:
             current = int(current) + 1
             subprocess.call(self.cmd%(str(current),'brightness'),shell=True)
+            self.settings.set_string('brightness',str(current))
         brFile.close()       
 
     def on_brightnessMinus_clicked(self,widget,data=None):
@@ -112,6 +133,7 @@ class ClevokbleduiWindow(Window):
             current = int(current) - 1
             
             subprocess.call(self.cmd%(str(current),'brightness'),shell=True)
+            self.settings.set_string('brightness',str(current))
         brFile.close()      
 
     def on_brightnessOff_clicked(self, widget, data=None):
